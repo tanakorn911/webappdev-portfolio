@@ -219,6 +219,12 @@
     .brutal-btn,
     .brutal-btn-secondary {
         width: 100%;
+        text-decoration: none;
+    }
+    
+    a.brutal-btn-secondary {
+        text-align: center;
+        text-decoration: none;
     }
 }
 
@@ -531,6 +537,7 @@ html {
     transition: all 0.3s;
     box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
     overflow: hidden;
+    text-decoration: none;
 }
 
 .brutal-btn::before {
@@ -746,7 +753,7 @@ html {
     font-size: clamp(3rem, 8vw, 6rem);
     font-weight: 900;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -763,20 +770,31 @@ html {
 }
 
 .about-image {
-    position: relative;
-    height: 400px;
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    background: none;
+    box-shadow: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .about-image-bg {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(139, 0, 0, 0.3), rgba(128, 0, 128, 0.3));
-    animation: distortion 5s ease-in-out infinite;
+    display: none;
 }
+
+
 
 @keyframes distortion {
     0%, 100% { filter: hue-rotate(0deg); }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="icon" href="/images/brutal.dev.jpg" sizes="32x32">
+    <link rel="icon" href="brutal.dev.png" sizes="32x32" type="image/png">
 </head>
 <style>
     /* ===== FEATURED PROJECT ===== */
@@ -989,7 +989,7 @@ html {
 }
 
 .project-card:hover {
-    transform: translateY(-10px) scale(1.02);
+    transform: none;
 }
 
 .project-glow {
@@ -1572,14 +1572,15 @@ textarea.form-input {
                 </div>
                 <div class="about-text">
                     <p class="about-para">
-                        สวัสดีครับ! ผมเป็น <span class="highlight-red">Fullstack Developer</span> ปี 2 ที่หลงใหลในการสร้างเว็บแอปพลิเคชันที่ทั้งสวยงามและใช้งานได้จริง
+                        สวัสดีครับ! ผมเป็นนักศึกษาปี 2 ที่กำลังมุ่งสู่สาย <span class="highlight-red">Fullstack Developer</span> และมีความหลงใหลในการสร้างเว็บแอปพลิเคชันที่ตอบโจทย์ผู้ใช้
                     </p>
                     <p class="about-para">
-                        เชี่ยวชาญด้าน <span class="highlight-purple">Backend Development</span> ด้วย <span class="highlight-cyan">Flask & Python</span> พร้อมกับ <span class="highlight-red">Frontend Skills</span> ใน React และ Vanilla JavaScript
+                        มีความสนใจด้าน <span class="highlight-purple">Backend</span> โดยใช้ <span class="highlight-cyan">Flask & Python</span> และกำลังพัฒนาทักษะ <span class="highlight-red">Frontend</span> ด้วย React และ Vanilla JavaScript
                     </p>
                     <p class="about-para">
-                        มีความสามารถในการจัดการ <span class="highlight-purple">Database</span> ทั้ง SQLite3 และ MySQL รวมถึงการออกแบบ UI/UX ด้วย <span class="highlight-cyan">Tailwind CSS</span>
-                    </p>
+            มีพื้นฐานการใช้ฐานข้อมูล <span class="highlight-purple">SQLite3</span> และ <span class="highlight-purple">MySQL</span> พร้อมพัฒนาทักษะด้านการออกแบบ UI/UX ด้วย <span class="highlight-cyan">Tailwind CSS</span> และ <span class="highlight-cyan">Figma</span>
+        </p>
+
                     <p class="about-quote">
                         "Code is poetry, design is art"
                     </p>
@@ -1666,6 +1667,10 @@ textarea.form-input {
                     </div>
                 </div>
             </div>
+
+            <!-- Other Projects -->
+            <h3 class="other-projects-title">OTHER PROJECTS</h3>
+            <div class="projects-grid" id="projectsGrid"></div>
         </div>
     </section>
 
@@ -1739,6 +1744,23 @@ const skills = [
     { name: 'MySQL', level: 'Intermediate', icon: '🗄️' },
     { name: 'Git & GitHub', level: 'Expert', icon: '📚' },
     { name: 'UI/UX Design', level: 'Intermediate', icon: '✨' }
+];
+
+const projects = [
+    {
+        title: 'Booking - Resource ICT ',
+        icon: '📅',
+        desc: 'ออกแบบ UI/UX สำหรับเว็บแอป Booking - Resource ICT ระบบจองห้องและยืม-คืนทรัพยากร คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยพะเยา ',
+        tech: 'Figma skills',
+        Figma: 'https://www.figma.com/proto/GSDR55FMeJ0hhw0ZznAtXg/Project--Prototype-?node-id=1419-1943&p=f&t=v7kLYHmWJILTHNCy-0&scaling=min-zoom&content-scaling=fixed&page-id=1105%3A103&starting-point-node-id=1419%3A1943'
+    },
+    {
+        title: 'On-Street / Fashion',
+        icon: '👗',
+        desc: 'ออกแบบ UI/UX สำหรับแอปพลิเคชันแฟชั่นชื่อ On-Street ที่เน้นการนำเสนอเสื้อผ้าและเครื่องประดับสไตล์สตรีทแฟชั่น',
+        tech: 'Figma skills',
+        Figma: 'https://www.figma.com/proto/cNHeXx3mVboL014akLbVmC/On-Street---Fashion?node-id=0-1&p=f&t=R6bAV7CHXbIy7FfO-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1'
+    },
 ];
 
 // ===== CURSOR GLOW =====

@@ -1,3 +1,5 @@
+// ===== BRUTAL PORTFOLIO JAVASCRIPT =====
+
 // ===== API CONFIGURATION =====
 const API_URL = 'http://localhost:3000/api';
 
@@ -27,7 +29,7 @@ const projects = [
         desc: 'ออกแบบ UI/UX สำหรับแอปพลิเคชันแฟชั่นชื่อ On-Street ที่เน้นการนำเสนอเสื้อผ้าและเครื่องประดับสไตล์สตรีทแฟชั่น',
         tech: 'Figma skills',
         Figma: 'https://www.figma.com/proto/cNHeXx3mVboL014akLbVmC/On-Street---Fashion?node-id=0-1&p=f&t=R6bAV7CHXbIy7FfO-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1'
-    },
+    }
 ];
 
 // ===== CURSOR GLOW =====
@@ -225,7 +227,7 @@ projects.forEach(project => {
             <p class="project-desc">${project.desc}</p>
             <p class="project-tech">${project.tech}</p>
             <button class="project-btn" onclick="window.open('${project.Figma}', '_blank')">
-                VIEW ON FIGMA
+                VIEW ON Figma
             </button>
         </div>
     `;

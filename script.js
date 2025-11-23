@@ -224,8 +224,8 @@ projects.forEach(project => {
             <h3 class="project-title">${project.title}</h3>
             <p class="project-desc">${project.desc}</p>
             <p class="project-tech">${project.tech}</p>
-            <button class="project-btn" onclick="window.open('${project.github}', '_blank')">
-                VIEW ON GITHUB
+            <button class="project-btn" onclick="window.open('${project.Figma}', '_blank')">
+                VIEW ON FIGMA
             </button>
         </div>
     `;
